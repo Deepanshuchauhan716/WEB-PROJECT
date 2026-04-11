@@ -1,0 +1,248 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.image{
+    position: relative;
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    background-color:blueviolet;
+    padding: 3px;
+}
+
+.image .profile-img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:2px solid #fff;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+
+.profile-card::before{
+    position: absolute;
+    content:"";
+    background-color: #4070f4;
+    top:0%;
+    left:0%;
+    height:30%;
+    border-radius:20px 20px 0px 0px;
+    width:100%;
+}
+
+
+.profile-card{
+    max-width:380px;
+    width:100%;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.8);
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    height:450px;
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hi{
+    font-family: century gothic;
+    font-weight:bold;
+}
+
+#ni{
+    font-family: century gothic;
+}
+
+.brand-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:white;
+    background-color: #4070f4;
+    margin:8px;
+    border-radius: 50%;
+    height:34px;
+    width:35px;
+}
+
+.model{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:25px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+    background-color:#4070f4;
+    border-radius: 24px;
+    font-size:14px;
+    padding:8px 10px;
+    border:none;
+    color:white;
+    width:120px;
+    height:40px;
+    font-family: sans-serif;
+}
+
+.number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anu{
+    margin:14px;
+    border-right:2px solid black;
+    padding:0 23px;
+=======
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.image{
+    position: relative;
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    background-color:blueviolet;
+    padding: 3px;
+}
+
+.image .profile-img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:2px solid #fff;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+
+.profile-card::before{
+    position: absolute;
+    content:"";
+    background-color: #4070f4;
+    top:0%;
+    left:0%;
+    height:30%;
+    border-radius:20px 20px 0px 0px;
+    width:100%;
+}
+
+
+.profile-card{
+    max-width:380px;
+    width:100%;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.8);
+    border-radius: 20px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    height:450px;
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hi{
+    font-family: century gothic;
+    font-weight:bold;
+}
+
+#ni{
+    font-family: century gothic;
+}
+
+.brand-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:white;
+    background-color: #4070f4;
+    margin:8px;
+    border-radius: 50%;
+    height:34px;
+    width:35px;
+}
+
+.model{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:25px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+    background-color:#4070f4;
+    border-radius: 24px;
+    font-size:14px;
+    padding:8px 10px;
+    border:none;
+    color:white;
+    width:120px;
+    height:40px;
+    font-family: sans-serif;
+}
+
+.number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anu{
+    margin:14px;
+    border-right:2px solid black;
+    padding:0 23px;
+======= cc6bfa0d456e05ea558fee75dfe39892a7e1f014
+}

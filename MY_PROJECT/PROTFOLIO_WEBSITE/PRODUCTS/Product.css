@@ -1,0 +1,233 @@
+#parent {
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+nav {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background: #6c9b2a;
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 2px 12px;
+  border-radius: 10px;
+}
+
+nav a {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0px 50px;
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  z-index: 1;
+}
+
+nav span {
+  left: 230px;
+  position: absolute;
+  background: linear-gradient(45deg, #194b4f, #33fffc);
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+nav a:nth-child(1):hover ~ span {
+  left: 0px;
+}
+nav a:nth-child(2):hover ~ span {
+  left: 230px;
+}
+nav a:nth-child(3):hover ~ span {
+  left: 460px;
+}
+nav a:nth-child(4):hover ~ span {
+  left: 680px;
+}
+nav a:nth-child(5):hover ~ span {
+  left: 890px;
+}
+
+#search {
+  display: flex;
+  height: 39px;
+  width: 350px;
+  padding-left: 50px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid black;
+  caret-color: black;
+}
+#search::placeholder {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  letter-spacing: 1px;
+}
+
+/* search icon edit */
+
+#icon {
+  display: flex;
+}
+
+#icon_bro {
+  position: relative;
+  bottom: 12px;
+  left: 70px;
+}
+
+/* edit search */
+
+#search {
+  height: 39px;
+  width: 350px;
+  padding-left: 50px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid black;
+  caret-color: black;
+}
+
+/* search icon edit */
+
+#icon {
+  position: relative;
+  right: 455px;
+  top: 13px;
+}
+body {
+  margin:0;
+  padding: 0;
+  min-height: 100vh;
+  background: #c48cb3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* marquee tag wale div */
+.slide_div {
+  position: relative;
+  top:80px;
+  display: flex;
+  height: 265px;
+  width: 210px;
+  background-color: white;
+  float: left;
+  border: 2px solid limegreen;
+  justify-content: space-between;
+  /* box-shadow: 0px 0px 30px 1px #454545; */
+  border-radius: 20px;
+  animation: op 3s linear;
+  animation-timeline: view();
+  animation-range: entry 20% cover 50%;
+}
+
+.slide_div:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.shop_div {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  top: 208px;
+  height: 57px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.shop_no {
+  height: 30px;
+  width: 110px;
+  position: relative;
+  top: 10px;
+  left: 50px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid violet;
+  font-weight: bold;
+  z-index: +1;
+  background: linear-gradient(to bottom right, #e100ff, #008cff);
+  color: white;
+}
+
+.shop_no:focus {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: black;
+  border: 2px solid black;
+}
+
+#row_img {
+  height: 210px;
+  width: 210px;
+  position: relative;
+  bottom: 240px;
+  right: 1px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 1px solid limegreen;
+}
+
+/* #foot {
+  height: 250px;
+  width: 100%;
+  color: white;
+} */
+
+#emojie_div {
+  display: flex;
+  justify-content: space-around;
+}
+
+#emojie {
+  position: relative;
+  bottom: 710px;
+}
+.plus {
+  font-weight: bold;
+}
+
+#emojie_divine {
+  display: flex;
+  justify-content: space-around;
+}
+
+#emojie1 {
+  position: relative;
+  bottom: 15px;
+}
+
+.rate {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+#emojie_divin {
+  display: flex;
+  justify-content: space-around;
+}
+
+#emojie2 {
+  position: relative;
+  bottom: 370px;
+}

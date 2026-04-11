@@ -1,0 +1,119 @@
+body{
+    margin: 0px;
+    padding:0px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #E3ecFF, #F8FbFF);
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav{
+    height:30px;
+    background: #758ac3;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.nav_link{
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav_link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: width 0.4s ease;
+}
+
+.nav_link:hover::after{
+    width: 100%;
+}
+.nav_link:focus::after,
+.nav_link.active::after{
+    width: 100%;
+}
+
+#book_icon{
+  color: black;
+  font-size: 30px;
+}
+
+select{
+  height:30px;
+  width:70px;
+  background-color: transparent;
+  color: white;
+  border:none;
+  border-radius: 6px;
+}
+
+.dash{
+  position: absolute;
+  left: 100px;
+  top:100px;
+}
+
+.card{
+  position: relative;
+  top:130px;
+  left:110px;
+  align-items: center;
+  height:300px;
+  width: 500px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  border:1px solid #e5e7eb;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+input{
+    display: block;
+    height:26px;
+    width:340px;
+    border-radius: 6px;
+    border: none;
+    border:2px solid gray;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+button{
+    letter-spacing: 1px;
+    color: white;
+    background-color: #758ac3;
+    position: relative;
+    top:60px;
+    left:280px;
+   font-family: "Momo Trust Display", sans-serif;
+   font-weight: bold;
+    border:none;
+    border-radius: 10px;
+    height:30px;
+    width:200px; 
+    border: 1px solid black;
+}
+
+button:focus{
+    border: 1px solid white;
+    transform: scale(0.98);
+}
+
+.logout{
+  height:30px;
+  width:80px;
+  border-radius: 6px;
+  border: none;
+  border: 1px solid black;
+}

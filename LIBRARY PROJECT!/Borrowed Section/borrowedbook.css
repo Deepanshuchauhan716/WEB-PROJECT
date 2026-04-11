@@ -1,0 +1,130 @@
+nav{
+    height:30px;
+    background: #758ac3;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.nav_link{
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav_link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: width 0.4s ease;
+}
+
+.nav_link:hover::after{
+    width: 100%;
+}
+.nav_link:focus::after,
+.nav_link.active::after{
+    width: 100%;
+}
+
+body{
+  margin: 0px;
+  padding:0px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #E3ecFF, #F8FbFF);
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#book_icon{
+  color: black;
+  font-size: 30px;
+}
+
+.dash{
+  position: absolute;
+  left: 100px;
+  top:100px;
+}
+
+.logout{
+  height:30px;
+  width:80px;
+  border-radius: 6px;
+  border: none;
+  border: 1px solid black;
+}
+
+#log{
+  position: relative;
+  left:7px;
+}
+
+.Search{
+    padding-left: 20px;
+    top:50px;
+    position: relative;
+    left:900px;
+    height:30px;
+    width:200px;
+    font-family: tahoma;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    border:1px solid gray;
+}
+.Search_btn{
+    padding-left: 5px;
+    top:50px;
+    position: relative;
+    left:900px;
+    height:33px;
+    width:100px;
+    font-family: tahoma;
+    font-weight: bold;
+    background-color: #758ac3;
+    border: none;
+    color: white;
+    border-radius: 6px;
+}
+.Search_btn:focus{
+    border: 1px solid black;
+    transform: scale(0.95);
+}
+
+.card {
+    width:1300px;
+    margin:300px auto 0 auto;
+    margin-top: 100px;
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid black;
+}
+
+#student_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #6e8bda;
+    color: white;
+}
+
+

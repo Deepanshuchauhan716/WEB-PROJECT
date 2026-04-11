@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- hhhh -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Momo+Trust+Display&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <h1>Smart Libray<i class="fa-solid fa-book" id="book_icon"></i></h1>
+        <a href="dashboard.html" class="nav_link">Dashboard</a>
+        <a href="../Login Section/index.html" class="nav_link">Login page</a>
+        <a href="../Borrowed Section/borrowedbook.html" class="nav_link">Borrowed book</a>
+        <a href="../IssueBook Section/issuedbook.html" class="nav_link">Issue Book</a>
+        <a href="../ReturnBook Section/returnBook.html" class="nav_link">Return Book</a>
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-earth-americas"></i>
+        <button class="logout" onclick="logout()">Log Out<i class="fa-solid fa-right-from-bracket" id="log"></i></button>
+    </nav>
+    <h1 class="dash">Dashboard</h1>
+    <div class="card">
+        <div>
+            <img src="../img/1.avif" class="img1">
+            <h4 class="head1">Total Borrowed Book</h4>
+        </div>
+
+        <div>
+            <img src="../img/2.png" class="img2">
+            <h3 class="head2">Overdue Book</h3>
+        </div>
+        <div>
+            <img src="../img/return-investment-three-dimensional-illustration-arrows-words-45614893.webp" alt=""
+                class="img3">
+            <h3 class="head3">Return Books</h3>
+        </div>
+        <div class="div1">3</div>
+        <div class="div2">3</div>
+        <div class="div3">3</div>
+    </div>
+    <img src="../img/h.png" alt="" class="images">
+    </div>
+    <div class="card0">
+        <h1 class="quick">Quick Action</h1>
+        <a href="../Borrowed Section/borrowedbook.html" class="an"><img src="../img/a1.avif" alt="" class="a1">View Borrowed Books</a>
+        <a href="../IssueBook Section/issuedbook.html" class="an"><img src="../img/a1.avif" alt="" class="a1">Issue a New Book</a>
+        <a href="../ReturnBook Section/returnBook.html" class="an"><img src="../img/a1.avif" alt="" class="a1">Return a Book</a>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="borrowedbook.css">
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- hhhh -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Momo+Trust+Display&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h1>Smart Libray<i class="fa-solid fa-book" id="book_icon"></i></h1>
+        <a href="../Dashboard Section/dashboard.html" class="nav_link">Dashboard</a>
+        <a href="../Login Section/index.html" class="nav_link">Login page</a>
+        <a href="borrowedbook.html" class="nav_link">Borrowed book</a>
+        <a href="../IssueBook Section/issuedbook.html" class="nav_link">Issue Book</a>
+        <a href="../ReturnBook Section/returnBook.html" class="nav_link">Return Book</a>
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-earth-americas"></i>
+        <button class="logout" onclick="logout()">Log Out<i class="fa-solid fa-right-from-bracket" id="log"></i></button>
+    </nav>
+     <h1 class="dash">Borrowed Books</h1>
+     <input type="number" placeholder="Search by Roll number" class="Search">
+     <button type="submit" class="Search_btn">Search</button>
+
+     <div class="card">
+        <table id="student_table" border="1px">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll NUmber</th>
+                    <th>Book issued</th>
+                    <th>Issued date</th>
+                    <th>Returned date</th>
+                    <th>Unique id</th>
+                    <th>Fine (Rupees)</th>
+                    <th>Book status</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+        <!-- yaha JS se rows aayengi -->
+    </tbody>
+        </table>
+     </div>
+     <script src="borrowedbook.js"></script>
+</body>
+</html>

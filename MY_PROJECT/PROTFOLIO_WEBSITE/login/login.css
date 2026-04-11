@@ -1,0 +1,339 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #c48cb3;
+    overflow: hidden;
+}
+
+nav {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background: #6c9b2a;
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 2px 12px;
+  border-radius: 10px;
+}
+
+nav a {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0px 50px;
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  z-index: 1;
+}
+
+nav span {
+  left: 900px;
+  position: absolute;
+  background: linear-gradient(45deg, #194b4f, #33fffc);
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+nav a:nth-child(1):hover ~ span {
+  left: 0px;
+}
+nav a:nth-child(2):hover ~ span {
+  left: 230px;
+}
+nav a:nth-child(3):hover ~ span {
+  left: 460px;
+}
+nav a:nth-child(4):hover ~ span {
+  left: 680px;
+}
+nav a:nth-child(5):hover ~ span {
+  left: 890px;
+}
+
+#search {
+  display: flex;
+  height: 39px;
+  width: 350px;
+  padding-left: 50px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid black;
+  caret-color: black;
+}
+#search::placeholder {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  letter-spacing: 1px;
+}
+
+/* search icon edit */
+
+#icon {
+  display: flex;
+}
+
+#icon_bro {
+  position: relative;
+  bottom: 12px;
+  left: 70px;
+}
+
+/* edit search */
+
+#search {
+  height: 39px;
+  width: 350px;
+  padding-left: 50px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid black;
+  caret-color: black;
+}
+
+/* search icon edit */
+
+#icon {
+  position: relative;
+  right: 455px;
+  top: 13px;
+}
+
+#page {
+  position: relative;
+  height: 550px;
+  width: 400px;
+  border: 2px solid #0d1e4c;
+  top: 60px;
+  left: 550px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(60px);
+}
+
+h2 {
+  position: relative;
+  top: 20px;
+  left: 100px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.user {
+  position: relative;
+  top: 16px;
+  left: 10px;
+  margin-bottom: 40px;
+  height: 40px;
+  width: 350px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  border: 2px solid transparent;
+  font-size: 17px;
+}
+
+/* user hover effect */
+.user:focus {
+  border: 2px solid black;
+}
+
+/* user name coding */
+
+.labl {
+  position: absolute;
+  top: 174px;
+  right: 280px;
+  transition: 0.3s;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.user:focus + .labl,
+.user:valid + .labl {
+  transform: translate(0px, -37px) scale(0.99);
+}
+
+/* second input coding */
+
+.sec_input {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  margin-bottom: 40px;
+  height: 40px;
+  width: 350px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  border: 2px solid transparent;
+  font-size: 17px;
+}
+
+/* focus second input */
+.sec_input:focus {
+  border: 2px solid black;
+}
+/* enter course coding */
+
+.sec_labl {
+  position: absolute;
+  top: 253px;
+  right: 290px;
+  transition: 0.3s;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.sec_input:focus + .sec_labl,
+.sec_input:valid + .sec_labl {
+  transform: translate(0px, -37px) scale(0.99);
+}
+
+.third_input {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  margin-bottom: 40px;
+  height: 40px;
+  width: 350px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  border: 2px solid transparent;
+  font-size: 17px;
+}
+
+.third_labl {
+  position: absolute;
+  top: 337px;
+  right: 290px;
+  transition: 0.3s;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.third_input:focus + .third_labl,
+.third_input:valid + .third_labl {
+  transform: translate(0px, -37px) scale(0.99);
+}
+
+.third_input:focus {
+  border: 2px solid black;
+}
+
+.frth_input {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  margin-bottom: 40px;
+  height: 40px;
+  width: 350px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  border: 2px solid transparent;
+  font-size: 17px;
+}
+
+.frth_labl {
+  position: absolute;
+  top: 421px;
+  right: 290px;
+  transition: 0.3s;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.frth_input:focus + .frth_labl,
+.frth_input:valid + .frth_labl {
+  transform: translate(0px, -37px) scale(0.99);
+}
+
+.frth_input:focus {
+  border: 2px solid black;
+}
+
+#btn1 {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  margin-bottom: 40px;
+  height: 20px;
+  width: 100px;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 17px;
+  border: 2px solid transparent;
+  background-color: black;
+}
+
+#btn1:focus {
+  border: 2px solid white;
+}
+
+#lbl1 {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  transition: 0.3s;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  color: white;
+}
+
+#btn2 {
+  position: relative;
+  top: 10px;
+  left: 160px;
+  margin-bottom: 40px;
+  height: 20px;
+  width: 100px;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 17px;
+  border: 2px solid transparent;
+  background-color: black;
+}
+
+#lbl2 {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  transition: 0.3s;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  color: white;
+}
+
+#btn2:focus {
+  border: 2px solid white;
+}

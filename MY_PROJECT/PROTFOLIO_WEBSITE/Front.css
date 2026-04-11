@@ -1,0 +1,1001 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* AI BACKGROUNG IMAGE CODING */
+
+body {
+  min-height: 100vh;
+  background: #c48cb3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* nav baar coding */
+
+nav {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background: #6c9b2a;
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 2px 12px;
+  border-radius: 10px;
+}
+
+nav a {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0px 50px;
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  z-index: 1;
+}
+
+nav span {
+  left: 0px;
+  position: absolute;
+  background: linear-gradient(45deg, #194b4f, #33fffc);
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+nav a:nth-child(1):hover ~ span {
+  left: 0px;
+}
+nav a:nth-child(2):hover ~ span {
+  left: 230px;
+}
+nav a:nth-child(3):hover ~ span {
+  left: 460px;
+}
+nav a:nth-child(4):hover ~ span {
+  left: 680px;
+}
+nav a:nth-child(5):hover ~ span {
+  left: 890px;
+}
+
+#search {
+  display: flex;
+  height: 39px;
+  width: 350px;
+  padding-left: 50px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid black;
+  caret-color: black;
+}
+#search::placeholder {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  letter-spacing: 1px;
+}
+
+/* search icon edit */
+
+#icon {
+  display: flex;
+}
+
+#icon_bro {
+  position: relative;
+  bottom: 12px;
+  left: 70px;
+}
+
+/* edit search */
+
+#search {
+  height: 39px;
+  width: 350px;
+  padding-left: 50px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid black;
+  caret-color: black;
+}
+
+/* search icon edit */
+
+#icon {
+  position: relative;
+  right: 455px;
+  top: 13px;
+}
+
+/* login background div  coding*/
+
+#page {
+  position: relative;
+  height: 550px;
+  width: 400px;
+  border: 2px solid #0d1e4c;
+  top: 60px;
+  left: 1050px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(60px);
+}
+
+/*  login heading coding */
+
+h2 {
+  position: relative;
+  top: 30px;
+  left: 40px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+/* login page input coding */
+
+.user {
+  position: relative;
+  top: 100px;
+  left: 10px;
+  margin-bottom: 40px;
+  height: 40px;
+  width: 350px;
+  border-radius: 20px;
+  outline: none;
+  padding: 20px;
+  border: none;
+  border: 2px solid transparent;
+  font-size: 17px;
+}
+
+/* user hover effect */
+.user:focus {
+  border: 2px solid black;
+}
+
+/* user name coding */
+
+.labl {
+  position: absolute;
+  top: 174px;
+  right: 280px;
+  transition: 0.3s;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.user:focus + .labl,
+.user:valid + .labl {
+  transform: translate(0px, -37px) scale(0.99);
+}
+
+/* second input coding */
+
+.sec_input {
+  position: relative;
+  top: 96px;
+  left: 10px;
+  margin-bottom: 40px;
+  height: 40px;
+  width: 350px;
+  border-radius: 20px;
+  outline: none;
+  padding: 20px;
+  border: none;
+  border: 2px solid transparent;
+  font-size: 17px;
+}
+
+/* focus second input */
+.sec_input:focus {
+  border: 2px solid black;
+}
+/* enter course coding */
+
+.sec_labl {
+  position: absolute;
+  top: 253px;
+  right: 260px;
+  transition: 0.3s;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.sec_input:focus + .sec_labl,
+.sec_input:valid + .sec_labl {
+  transform: translate(0px, -37px) scale(0.99);
+}
+
+.third_input {
+  position: relative;
+  top: 96px;
+  left: 10px;
+  margin-bottom: 40px;
+  height: 40px;
+  width: 350px;
+  border-radius: 20px;
+  outline: none;
+  padding: 20px;
+  border: none;
+  border: 2px solid transparent;
+  font-size: 17px;
+}
+
+.third_labl {
+  position: absolute;
+  top: 337px;
+  right: 270px;
+  transition: 0.3s;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.third_input:focus + .third_labl,
+.third_input:valid + .third_labl {
+  transform: translate(0px, -37px) scale(0.99);
+}
+
+.third_input:focus {
+  border: 2px solid black;
+}
+
+.frth_input {
+  position: relative;
+  top: 96px;
+  left: 10px;
+  margin-bottom: 40px;
+  height: 40px;
+  width: 350px;
+  border-radius: 20px;
+  outline: none;
+  padding: 20px;
+  border: none;
+  border: 2px solid transparent;
+  font-size: 17px;
+}
+
+.frth_labl {
+  position: absolute;
+  top: 421px;
+  right: 240px;
+  transition: 0.3s;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.frth_input:focus + .frth_labl,
+.frth_input:valid + .frth_labl {
+  transform: translate(0px, -37px) scale(0.99);
+}
+
+.frth_input:focus {
+  border: 2px solid black;
+}
+
+#btn1 {
+  position: relative;
+  top: 90px;
+  left: 10px;
+  margin-bottom: 40px;
+  height: 20px;
+  width: 100px;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 17px;
+  border: 2px solid transparent;
+  background-color: black;
+}
+
+#btn1:focus {
+  border: 2px solid white;
+}
+
+#lbl1 {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  transition: 0.3s;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  color: white;
+}
+
+#btn2 {
+  position: relative;
+  top: 90px;
+  left: 160px;
+  margin-bottom: 40px;
+  height: 20px;
+  width: 100px;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 17px;
+  border: 2px solid transparent;
+  background-color: black;
+}
+
+#lbl2 {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  transition: 0.3s;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  color: white;
+}
+
+#btn2:focus {
+  border: 2px solid white;
+}
+
+/* welcome to ai hub code */
+
+#Welcome {
+  position: relative;
+  bottom: 450px;
+  left: 160px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+#prebo {
+  position: relative;
+  bottom: 450px;
+  left: 210px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* style  ai bottom*/
+#pro {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+#image {
+  height: 330px;
+  width: 350px;
+  position: relative;
+  left: 320px;
+  bottom: 390px;
+  border-radius: 50%;
+  box-shadow:
+    rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border: 2px solid white;
+  animation: float 5s infinite;
+}
+
+#image:hover {
+  transition: 0.4s;
+  transform: scale(1.04);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#card_part {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  bottom: 240px;
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px 1px #454545;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+
+#inner {
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(#a619f8, #00f2fe);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 200px 100px;
+  border-bottom-right-radius: 200px 100px;
+}
+
+#label1 {
+  position: relative;
+  top: 15px;
+  left: 30px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: white;
+}
+#label2 {
+  position: relative;
+  top: 15px;
+  left: 45px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: white;
+}
+#label3 {
+  position: relative;
+  top: 10px;
+  left: 29px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: white;
+}
+
+.first_para {
+  text-align: justify;
+  position: relative;
+  bottom: 400px;
+  left: 150px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.sec_para {
+  text-align: justify;
+  position: relative;
+  bottom: 580px;
+  left: 625px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.third_para {
+  text-align: justify;
+  position: relative;
+  bottom: 750px;
+  left: 1040px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* btn div edit */
+#Btn_div {
+  display: flex;
+  justify-content: space-around;
+}
+/* Get started edit */
+#Btn_div button {
+  height: 40px;
+  width: 200px;
+  position: relative;
+  bottom: 750px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid black;
+  justify-content: space-between;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+  background: black;
+}
+
+#Btn1 {
+  position: relative;
+  left: 50px;
+}
+
+#Btn3 {
+  position: relative;
+  right: 40px;
+}
+
+#Btn_div button:focus {
+  transform: scale(0.97);
+  background: #3f5efb;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  transform: scale(0.93);
+  transition: 1s;
+}
+
+/* our impact edit */
+#our_impact {
+  position: relative;
+  bottom: 600px;
+  left: 600px;
+  font-family: tahoma;
+  width: 300px;
+}
+
+#achiv {
+  height: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* card div achivement */
+
+.impact_class {
+  height: 400px;
+  width: 300px;
+  background-color: white;
+  border-radius: 30px;
+  position: relative;
+  bottom: 500px;
+}
+
+/* div inner div edit  */
+
+.color {
+  background: linear-gradient(#a619f8, #00f2fe);
+  height: 120px;
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 200px 100px;
+  border-bottom-right-radius: 200px 100px;
+}
+
+/* 1 2 3 edit */
+
+.priya {
+  position: relative;
+  top: 40px;
+  left: 130px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: white;
+}
+
+#achiv:hover .impact_class {
+  filter: blur(5px);
+  transition: 0.7s ease;
+}
+
+#achiv .impact_class:hover {
+  filter: blur(0);
+  transform: scale(1.05);
+}
+
+.delivery {
+  position: relative;
+  top: 50px;
+  left: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: tahoma;
+}
+
+.oder_para {
+  position: relative;
+  top: 60px;
+  font-weight: bold;
+  font-family: tahoma;
+  font-size: 16px;
+}
+
+#Btn2_div button {
+  height: 40px;
+  width: 200px;
+  position: relative;
+  bottom: 90px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid black;
+  justify-content: space-around;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+  background: black;
+}
+
+#Btn_one {
+  position: relative;
+  left: 85px;
+}
+
+#Btn_two {
+  position: relative;
+  left: 267px;
+}
+
+#Btn_three {
+  position: relative;
+  left: 434px;
+}
+
+#Btn_four {
+  position: relative;
+  left: 630px;
+}
+
+#Btn2_div button:focus {
+  transform: scale(0.97);
+  border: 2px solid white;
+}
+
+#parent {
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* marquee tag wale div */
+.slide_div {
+  display: flex;
+  height: 265px;
+  width: 210px;
+  background-color: white;
+  float: left;
+  border: 2px solid limegreen;
+  justify-content: space-between;
+  /* box-shadow: 0px 0px 30px 1px #454545; */
+  border-radius: 20px;
+  animation: op 3s linear;
+  animation-timeline: view();
+  animation-range: entry 20% cover 50%;
+}
+
+.slide_div:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.shop_div {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  top: 208px;
+  height: 55px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.shop_no {
+  height: 30px;
+  width: 110px;
+  position: relative;
+  top: 10px;
+  left: 50px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid violet;
+  font-weight: bold;
+  z-index: +1;
+  background: linear-gradient(to bottom right, #e100ff, #008cff);
+  color: white;
+}
+
+.shop_no:focus {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: black;
+  border: 2px solid black;
+}
+
+#row_img {
+  height: 210px;
+  width: 210px;
+  position: relative;
+  bottom: 240px;
+  right: 1px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 1px solid limegreen;
+}
+
+#foot {
+  height: 250px;
+  width: 100%;
+  /* background: linear-gradient (#00f2fe,#a619f8,); */
+  color: white;
+}
+
+#emojie_div {
+  display: flex;
+  justify-content: space-around;
+}
+
+#emojie {
+  position: relative;
+  bottom: 810px;
+}
+.plus {
+  font-weight: bold;
+}
+
+#emojie_divine {
+  display: flex;
+  justify-content: space-around;
+}
+
+#emojie1 {
+  position: relative;
+  bottom: 95px;
+}
+
+.rate {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+#emojie_divin {
+  display: flex;
+  justify-content: space-around;
+}
+
+#emojie2 {
+  position: relative;
+  bottom: 470px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes op {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #a619f8, #00f2fe);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #00f2fe, #a619f8);
+}
+
+#about_us {
+  position: relative;
+  left: 42%;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+  color: black;
+}
+
+#insta_fb {
+  height: 430px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.insta_insta {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 400px;
+  border: 2px solid black;
+}
+
+#mummy {
+  font-size: 40px;
+  position: relative;
+  top: 40px;
+  left: 90px;
+}
+
+#youtube_logo {
+  position: relative;
+  top: 100px;
+  right: 20px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.anchor {
+  height: 40px;
+  width: 250px;
+  position: relative;
+  bottom: 200px;
+  line-height: 40px;
+  text-align: center;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.anchor:hover {
+  background-color: #00d9ff;
+  color: black;
+  border: 1px solid black;
+  transition: 0.8s;
+}
+
+.product_buy{
+  display: flex;
+ justify-content: center;
+}
+
+.product_buy1{
+  color: white;
+  text-align: center;
+  width: 600px;
+  border-radius: 20px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  bottom: 60px;
+  background-color: #454545;
+}
+
+.contact_foot{
+  position: relative;
+  top:80px;
+  left: 150px;
+  font-size: 20px;
+  color: black;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul{
+   left: 150px;
+  position: relative;
+  top:100px;
+  color: black;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pintrest{
+  position: relative;
+   top:170px;
+   left: 150px;
+  color: black;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.Last_icon{
+  position: relative;
+  top:180px;
+  left: 150px;
+  color: black;
+  font-size: 20px;
+}
+
+.MY_acc{
+  position: relative;
+  left: 750px;
+  bottom: 110px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+#Kya_yar{
+  position: relative;
+  bottom: 200px;
+  left: 600px;
+  cursor: pointer;
+}
+
+.unorderd_list{
+  position: relative;
+  bottom: 400px;
+}
+
+.Ins_app{
+   position: relative;
+  bottom: 240px;
+  left: 1000px;
+   font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.app_store{
+  position: relative;
+  bottom: 320px;
+  left: 850px;
+}
+
+#lulubox{
+  position: relative;
+  top:120px;
+  left:150px;
+  font-size: 20px;
+}

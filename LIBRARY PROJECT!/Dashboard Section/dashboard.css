@@ -86,7 +86,7 @@ select{
   width:50px;
   left:50px;
   position:relative;
-  bottom: 27px;
+  bottom: 25px;
 }
 .img2{
   height:41px;
@@ -172,7 +172,7 @@ select{
     background-color:#ffffff;
     position: relative;
     left:110px;
-   top:180px;
+    bottom: 200px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
    display: flex;
    flex-direction: row;
@@ -189,12 +189,13 @@ select{
   display: flex;
   justify-content: center;
   align-items: center;
-  height:30px;
+  height:80px;
   position: relative;
-  top:50px;
+  top:10px;
   color: black;
   text-decoration: none;
-  background-color:#6e8bda; 
+   background: rgba(32, 5, 5, 0.15);
+  backdrop-filter: blur(50px);
   padding: 10px 15px; 
   margin: 15px 20px;
   border-radius: 8px;

@@ -89,7 +89,7 @@ input{
     padding-left: 10px;
 }
 
-button{
+#returnBookBtn{
     letter-spacing: 1px;
     color: white;
     background-color: #758ac3;
@@ -105,7 +105,7 @@ button{
     border: 1px solid black;
 }
 
-button:focus{
+.returnBookBtn:focus{
     border: 1px solid white;
     transform: scale(0.98);
 }

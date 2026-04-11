@@ -149,7 +149,7 @@ body{
     width: 400px;
     position: relative;
     left:970px;
-    bottom: 80px;
+    bottom: 200px;
 }
 
 .login_btn:focus{
@@ -186,4 +186,12 @@ body{
     color: red;
     display: none;
     transition: 0.3s;
+}
+
+.logo{
+    height:130px;
+    width:130px;
+    position: relative;
+    left:610px;
+    bottom: 20px;
 }

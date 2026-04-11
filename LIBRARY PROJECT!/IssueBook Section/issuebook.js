@@ -1,3 +1,9 @@
+function logout() {
+    localStorage.removeItem("isLoggedIn");
+    window.location.href = "../login section/index.html";
+}
+
+
 document.querySelector(".issu").addEventListener("click", function(e){
 
     e.preventDefault(); // form reload rokega

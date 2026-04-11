@@ -94,3 +94,11 @@ input{
 .issu:focus{
     border: 2px solid black;
 }
+
+.logout{
+  height:30px;
+  width:80px;
+  border-radius: 6px;
+  border: none;
+  border: 1px solid black;
+}

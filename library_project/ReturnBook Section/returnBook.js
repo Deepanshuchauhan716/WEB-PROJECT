@@ -1,6 +1,6 @@
 function logout() {
     localStorage.removeItem("isLoggedIn");
-    window.location.href = "../login section/index.html";
+    window.location.href = "../index.html";
 }
 
 let returnBtn = document.getElementById("returnBookBtn");

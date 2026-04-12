@@ -40,7 +40,22 @@
             <button class="issu">Issued Book</button>
         </form>
     </div>
-    <div id="isu_card">Book issued Succefully ✅ </div>
+    <!-- Success Popup -->
+<div class="issue-popup" id="issuePopup">
+  <div class="issue-card">
+
+    <div class="issue-icon">
+      <i class="fa-solid fa-circle-check"></i>
+    </div>
+
+    <h2>Book Issued Successfully!</h2>
+    <p>Book has been issued to the student.</p>
+    <p id="issueUniqueId" style="font-weight: bold; color: #4CAF50;"></p>
+
+    <button id="closeIssue">OK</button>
+
+  </div>
+</div>
     <script src="issuebook.js"></script>
 </body>
 </html>

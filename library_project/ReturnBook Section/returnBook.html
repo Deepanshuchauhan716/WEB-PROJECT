@@ -37,6 +37,37 @@
         <label for="Unique ID">Unique ID</label><input type="text" id="uniqueId">
         <button id="returnBookBtn">Mark As Returned</button>
     </div>
+    <!-- Return Success Popup -->
+<div class="return-popup" id="returnPopup">
+  <div class="return-card">
+
+    <div class="icon-box">
+      <i class="fa-solid fa-circle-check"></i>
+    </div>
+
+    <h2>Book Returned</h2>
+    <p>Book has been returned successfully!</p>
+
+    <button id="closeReturn">OK</button>
+
+  </div>
+</div>
+
+<!-- Error Popup -->
+<div class="error-popup" id="errorPopup">
+  <div class="error-card">
+
+    <div class="error-icon">
+      <i class="fa-solid fa-circle-xmark"></i>
+    </div>
+
+    <h2>Data Not Found</h2>
+    <p>No matching record found. Please check details!</p>
+
+    <button id="closeError">OK</button>
+
+  </div>
+</div>
     <script src="returnBook.js"></script>
    </body>
    </html>

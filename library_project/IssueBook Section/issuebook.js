@@ -46,9 +46,10 @@ document.querySelector(".issu").addEventListener("click", function(e){
     // dobara save karo
     localStorage.setItem("students", JSON.stringify(data));
 
-    let ca = document.querySelector("#isu_card");
-    ca.style.display = "flex";
-
+     document.getElementById("issuePopup").style.display = "flex";
+     document.getElementById("closeIssue").onclick = function() {
+    document.getElementById("issuePopup").style.display = "none";
+};
     // form clear
     document.querySelector("form").reset();
 });

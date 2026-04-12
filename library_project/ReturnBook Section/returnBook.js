@@ -38,15 +38,24 @@ returnBtn.addEventListener("click", function() {
         }
     }
 
-    if (bookFound) {
+   if (bookFound) {
         localStorage.setItem("students", JSON.stringify(students));
-        alert("✅ Book Returned Successfully!");
+        document.getElementById("returnPopup").style.display = "flex";
         
         document.getElementById("studentName").value = "";
         document.getElementById("rollNumber").value = "";
         document.getElementById("uniqueId").value = "";
         
     } else {
-        alert("❌ Data not found! Check Name, Roll No or Unique ID");
+        document.getElementById("errorPopup").style.display = "flex";
     }
+});
+
+document.getElementById("closeError").addEventListener("click", function() {
+    document.getElementById("errorPopup").style.display = "none";
+});
+
+// Close Return Popup
+document.getElementById("closeReturn").addEventListener("click", function() {
+    document.getElementById("returnPopup").style.display = "none";
 });

@@ -46,7 +46,8 @@ document.querySelector(".issu").addEventListener("click", function(e){
     // dobara save karo
     localStorage.setItem("students", JSON.stringify(data));
 
-    alert("Book Issued ✅");
+    let ca = document.querySelector("#isu_card");
+    ca.style.display = "flex";
 
     // form clear
     document.querySelector("form").reset();

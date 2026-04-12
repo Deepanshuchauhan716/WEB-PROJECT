@@ -102,3 +102,21 @@ input{
   border: none;
   border: 1px solid black;
 }
+
+#isu_card{
+    transition: 1s;
+    height:250px;
+    width:250px;
+    background-color: rgb(89, 54, 54);
+    margin-left: 900px;
+    position: relative;
+    background: rgba(38, 15, 194, 0.15);
+   backdrop-filter: blur(50px);
+    bottom: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+

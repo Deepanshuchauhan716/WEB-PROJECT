@@ -261,3 +261,16 @@ input{
 .error-card button:hover{
   background: #b02a37;
 }
+
+.ini{
+  display: flex;
+  justify-content: right;
+  margin-right: 100px;
+ 
+}
+.hlo{
+  position: relative;
+  bottom: 250px;
+  height:400px;
+  width:400px;
+}

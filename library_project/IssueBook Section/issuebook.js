@@ -19,14 +19,14 @@ document.querySelector(".issu").addEventListener("click", function(e){
     return id;
 }
 
-    // form se data uthao
+
     let name = document.querySelector(".StudentName").value;
     let roll = document.querySelector(".RollNumber").value;
     let book = document.querySelector(".BookName").value;
     let issueDate = document.querySelector(".IssuedDate").value;
     let returnDate = document.querySelector(".ReturnDate").value;
 
-    // ek object banao
+
     let student = {
         name: name,
         roll: roll,
@@ -37,13 +37,13 @@ document.querySelector(".issu").addEventListener("click", function(e){
         fine: 0
     };
 
-    // pehle ka data nikalo
+
     let data = JSON.parse(localStorage.getItem("students")) || [];
 
-    // new data add karo
+  
     data.push(student);
 
-    // dobara save karo
+  
     localStorage.setItem("students", JSON.stringify(data));
 
      document.getElementById("issuePopup").style.display = "flex";

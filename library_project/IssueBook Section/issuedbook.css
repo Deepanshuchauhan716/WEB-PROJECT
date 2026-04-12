@@ -196,3 +196,16 @@ input{
     opacity: 1;
   }
 }
+
+.ini{
+  display: flex;
+  justify-content: right;
+  margin-right: 100px;
+ 
+}
+.hlo{
+  position: relative;
+  bottom: 300px;
+  height:400px;
+  width:400px;
+}

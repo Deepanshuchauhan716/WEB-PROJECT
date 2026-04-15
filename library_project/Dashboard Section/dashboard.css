@@ -1,7 +1,8 @@
 body{
     margin: 0px;
     padding:0px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   background: linear-gradient(135deg, #E3ecFF, #F8FbFF);
   font-family: "Momo Trust Display", sans-serif;
   font-weight: 400;

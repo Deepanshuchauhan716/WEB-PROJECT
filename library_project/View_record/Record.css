@@ -19,6 +19,11 @@ nav{
     align-items: center;  
 }
 
+#book_icon{
+  color: black;
+  font-size: 30px;
+}
+
 .nav_link{
     position: relative;
     color: rgb(255, 255, 255);

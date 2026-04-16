@@ -1,3 +1,40 @@
+document.querySelector(".signup_btn").addEventListener("click", function(){
+    document.querySelector(".signup_card").style.display = "block";
+});
+
+document.querySelector(".close_btn").addEventListener("click", function(){
+    document.querySelector(".signup_card").style.display = "none";
+});
+
+function openSignup(){
+    document.getElementById("overlay").style.display = "block";
+}
+
+function closeSignup(){
+    document.getElementById("overlay").style.display = "none";
+}
+
+document.querySelector(".create_btn").addEventListener("click", function(){
+
+    let inputs = document.querySelectorAll(".signup_input");
+
+    let isEmpty = false;
+
+    inputs.forEach(function(input){
+        if(input.value.trim() === ""){
+            isEmpty = true;
+        }
+    });
+
+    if(isEmpty){
+        alert("❌ Please fill all details!");
+    }else{
+        alert("✅ Account Created Successfully!");
+    }
+
+});
+
+
 const form = document.querySelector("form");
 
 form.addEventListener("submit", function(dets) {

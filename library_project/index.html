@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,6 +44,23 @@
     <h1 class="hello">Moniter All issued Bookes in real Time</h1>
     <h1 class="hello1">Automatically Calculate fine</h1>
     <h1 class="hello3">Handle book returns with ease and accuracy</h1>
+   
+    <button class="signup_btn" onclick="openSignup()">Sign Up</button>
+    <div class="overlay" id="overlay">
+
+<div class="signup_card" id="signupCard">
+    
+    <h2>Create Account</h2>
+
+    <input type="text" placeholder="Enter Name" class="signup_input">
+    <input type="email" placeholder="Enter Email" class="signup_input">
+    <input type="password" placeholder="Create Password" class="signup_input">
+
+    <button class="create_btn">Create Account</button>
+    
+    <span class="close_btn" onclick="closeSignup()">✖</span>
+</div>
+</div>
     <script src="script.js"></script>
 </body>
 

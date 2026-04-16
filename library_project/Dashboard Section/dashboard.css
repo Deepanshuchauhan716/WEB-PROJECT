@@ -19,7 +19,12 @@ nav{
     align-items: center;  
 }
 
+h1{
+  color:#000000;
+}
+
 .nav_link{
+  border-radius:6px;
     position: relative;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -75,10 +80,10 @@ select{
   height: auto;
   width: 800px;
   background-color: #ffffff;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.5);
   border-radius: 12px;
   padding: 25px;
   border:1px solid #e5e7eb;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-bottom-right-radius: 90px;
 }
 
@@ -168,13 +173,13 @@ select{
 }
 
 .card0{
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     height:150px;
     width:1200px;
     background-color:#ffffff;
     position: relative;
     left:110px;
     bottom: 200px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
    display: flex;
    flex-direction: row;
 
@@ -273,6 +278,57 @@ select{
   font-size: 14px;
   color: #38bdf8;
   font-weight: bold;
+}
+
+.about-card{
+  width: 80%;
+  max-width: 900px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.about-card h2{
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.about-text{
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-info{
+  text-align: left;
+  margin-top: 20px;
+}
+
+.about-info p{
+  font-size: 15px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.about-card:hover{
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+@media(max-width:768px){
+  .about-card{
+    width: 90%;
+    padding: 20px;
+  }
+
+  .about-card h2{
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 768px) {

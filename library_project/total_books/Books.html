@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="borrowedbook.css">
+    <link rel="stylesheet" href="Books.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- hhhh -->
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,41 +18,62 @@
         href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Momo+Trust+Display&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <h1>Smart Libray<i class="fa-solid fa-book" id="book_icon"></i></h1>
-        <a href="../Dashboard Section/dashboard.html" class="nav_link">Dashboard</a>
+        <a href="dashboard.html" class="nav_link">Dashboard</a>
         <a href="../View_record/Record.html" class="nav_link">Record</a>
-        <a href="borrowedbook.html" class="nav_link">Borrowed book</a>
+        <a href="../Borrowed Section/borrowedbook.html" class="nav_link">Borrowed book</a>
         <a href="../IssueBook Section/issuedbook.html" class="nav_link">Issue Book</a>
         <a href="../ReturnBook Section/returnBook.html" class="nav_link">Return Book</a>
         <a href="../total_books/Books.html" class="nav_link">Book Record</a>
-      
+    
         <button class="logout" onclick="logout()">Log Out<i class="fa-solid fa-right-from-bracket" id="log"></i></button>
     </nav>
-     <h1 class="dash">Borrowed Books</h1>
-     <input type="number" placeholder="Search by Roll number" class="Search">
-     <button type="submit" class="Search_btn">Search</button>
 
-     <div class="card">
-        <table id="student_table" border="1px">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Roll NUmber</th>
-                    <th>Book issued</th>
-                    <th>Issued date</th>
-                    <th>Returned date</th>
-                    <th>Unique id</th>
-                    <th>Fine (Rupees)</th>
-                    <th>Book status</th>
-                </tr>
-            </thead>
-            <tbody id="table_body">
-        <!-- yaha JS se rows aayengi -->
-    </tbody>
-        </table>
-     </div>
-     <script src="borrowedbook.js"></script>
+    <h2 class="title">Total Book Record</h2>
+
+<div class="card">
+
+  <div class="row header">
+    <span>Category</span>
+    <span>Total</span>
+    <span>Available</span>
+    <span>Status</span>
+  </div>
+
+  <div class="row">
+    <span>English</span>
+    <span>100</span>
+    <span id="engAvailable">100</span>
+    <span id="engStatus">Available</span>
+  </div>
+
+  <div class="row">
+    <span>Hindi</span>
+    <span>200</span>
+    <span id="hindiAvailable">200</span>
+    <span id="hindiStatus">Available</span>
+  </div>
+
+  <div class="row">
+    <span>Data Structure</span>
+    <span>400</span>
+    <span id="dsAvailable">400</span>
+    <span id="dsStatus">Available</span>
+  </div>
+
+  <div class="row">
+    <span>Physics</span>
+    <span>50</span>
+    <span id="phyAvailable">50</span>
+    <span id="phyStatus">Available</span>
+  </div>
+
+</div>
+
+<script src="Books.js"></script>
+
 </body>
 </html>

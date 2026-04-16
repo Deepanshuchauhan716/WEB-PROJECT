@@ -50,6 +50,14 @@ nav{
   font-size: 30px;
 }
 
+.logout{
+  height:30px;
+  width:80px;
+  border-radius: 6px;
+  border: none;
+  border: 1px solid black;
+}
+
 select{
   height:30px;
   width:70px;

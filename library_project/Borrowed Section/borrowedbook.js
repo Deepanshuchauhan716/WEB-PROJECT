@@ -105,7 +105,8 @@ window.onload = function() {
         } else {
             let data = JSON.parse(localStorage.getItem("students")) || [];
             let filteredData = data.filter(function(item) {
-                return String(item.roll) === searchValue;
+                return String(item.roll) === searchValue||
+                String(item.id) === searchValue;
             });
             renderTable(filteredData);
         }

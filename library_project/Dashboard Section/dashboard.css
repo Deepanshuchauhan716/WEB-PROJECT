@@ -205,8 +205,8 @@ select{
 .a1{
   position: relative;
   right:10px;
-  height:40px;
-  width:40px;
+  height:60px;
+  width:60px;
   border-radius: 50%;
 }
 
@@ -221,4 +221,63 @@ select{
 #log{
   position: relative;
   left:7px;
+}
+
+
+.bottom-card-container {
+  display: flex;
+  justify-content:space-evenly;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.bottom-card {
+  width: 280px;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  color:black;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transition: 0.4s;
+}
+
+.bottom-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.bottom-card i {
+  font-size: 35px;
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+.bottom-card h3 {
+  margin-bottom: 10px;
+}
+
+.bottom-card p {
+  font-size: 14px;
+  color:black;
+}
+
+.bottom-cards{
+  position: relative;
+  bottom: 50px;
+}
+
+.fine-text {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .bottom-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }

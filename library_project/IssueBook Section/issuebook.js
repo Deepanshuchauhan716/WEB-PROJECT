@@ -5,7 +5,7 @@ function logout() {
 
 document.querySelector(".issu").addEventListener("click", function(e){
 
-    e.preventDefault(); // form reload rokega
+    e.preventDefault();
 
     function generateId(){
         let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -19,19 +19,21 @@ document.querySelector(".issu").addEventListener("click", function(e){
     }
 
     let name = document.querySelector(".StudentName").value;
+    let email = document.querySelector(".Email").value; 
     let roll = document.querySelector(".RollNumber").value;
     let book = document.querySelector(".BookName").value;
     let issueDate = document.querySelector(".IssuedDate").value;
     let returnDate = document.querySelector(".ReturnDate").value;
 
     // ❌ validation
-    if(name === "" || roll === "" || book === "" || issueDate === "" || returnDate === ""){
+    if(name === "" || email === "" || roll === "" || book === "" || issueDate === "" || returnDate === ""){
         alert("❌ Sab fields bharo!");
         return;
     }
 
     let student = {
         name: name,
+        email: email,
         roll: roll,
         book: book,
         issueDate: issueDate,
@@ -47,7 +49,7 @@ document.querySelector(".issu").addEventListener("click", function(e){
 
     localStorage.setItem("students", JSON.stringify(data));
 
-
+    // 📚 BOOK UPDATE
     let books = JSON.parse(localStorage.getItem("books"));
 
     if(books){
@@ -55,7 +57,7 @@ document.querySelector(".issu").addEventListener("click", function(e){
             if(books[i].category === book){
 
                 if(books[i].available > 0){
-                    books[i].available--;   // 👈 100 → 99
+                    books[i].available--;
                 }else{
                     alert("❌ Book not available!");
                     return;
@@ -68,7 +70,21 @@ document.querySelector(".issu").addEventListener("click", function(e){
         localStorage.setItem("books", JSON.stringify(books));
     }
 
+    emailjs.send("service_p4l1h7o", "template_ai0tlgp", {
+        student_name: name,
+        student_email: email,
+        book_name: book,
+        issue_date: issueDate,
+        return_date: returnDate
+    })
+    .then(function(response) {
+        console.log("✅ Email sent!", response);
+    })
+    .catch(function(error) {
+        console.log("❌ Email failed!", error);
+    });
 
+    // POPUP SHOW
     document.getElementById("issuePopup").style.display = "flex";
 
     document.getElementById("closeIssue").onclick = function() {

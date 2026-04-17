@@ -48,6 +48,9 @@ body{
   color: black;
   font-size: 30px;
 }
+h1{
+    color: black;
+}
 
 .dash{
   position: absolute;

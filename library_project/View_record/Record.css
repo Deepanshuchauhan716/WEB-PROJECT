@@ -18,7 +18,9 @@ nav{
     justify-content: space-between;
     align-items: center;  
 }
-
+h1{
+  color: black;
+}
 #book_icon{
   color: black;
   font-size: 30px;

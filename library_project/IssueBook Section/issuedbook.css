@@ -207,7 +207,65 @@ h1{
 }
 .hlo{
   position: relative;
-  bottom: 300px;
+  bottom: 400px;
   height:400px;
   width:400px;
+}
+
+.error-popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+.error-card{
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    animation: pop 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.error-icon{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.error-card h2{
+    color: #e74c3c;
+}
+
+.error-card button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #e74c3c;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.error-card button:hover{
+    background: #c0392b;
+}
+
+@keyframes pop{
+    from{
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
 }

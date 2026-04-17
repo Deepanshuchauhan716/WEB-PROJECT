@@ -49,12 +49,15 @@ document.querySelector(".issu").addEventListener("click", function(e){
 
     localStorage.setItem("students", JSON.stringify(data));
 
-    // 📚 BOOK UPDATE
     let books = JSON.parse(localStorage.getItem("books"));
+
+    let foundBook = false;
 
     if(books){
         for(let i = 0; i < books.length; i++){
+
             if(books[i].category === book){
+                foundBook = true;
 
                 if(books[i].available > 0){
                     books[i].available--;
@@ -65,6 +68,12 @@ document.querySelector(".issu").addEventListener("click", function(e){
 
                 break;
             }
+        }
+
+
+        if(!foundBook){
+            alert("❌ This book is not available in library!");
+            return;
         }
 
         localStorage.setItem("books", JSON.stringify(books));

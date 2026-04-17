@@ -70,7 +70,6 @@ document.querySelector(".issu").addEventListener("click", function(e){
             }
         }
 
-
         if(!foundBook){
             alert("❌ This book is not available in library!");
             return;
@@ -93,6 +92,50 @@ document.querySelector(".issu").addEventListener("click", function(e){
         console.log("❌ Email failed!", error);
     });
 
+    // ================== 🔥 QR FEATURE ==================
+
+    function showQR(studentData){
+
+        let canvas = document.getElementById("qrCanvas");
+        let ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        let qrData = `
+Name: ${studentData.name}
+Roll: ${studentData.roll}
+Book: ${studentData.book}
+Issue: ${studentData.issueDate}
+Return: ${studentData.returnDate}
+`;
+
+        document.getElementById("qrOverlay").style.display = "flex";
+
+        QRCode.toCanvas(canvas, qrData);
+    }
+
+    function createQRButton(studentData){
+
+        let container = document.getElementById("qrBtnContainer");
+        if(!container) return;
+
+        container.innerHTML = "";
+
+        let btn = document.createElement("button");
+        btn.innerText = "View QR";
+
+        btn.onclick = function(){
+            showQR(studentData);
+        };
+
+        container.appendChild(btn);
+    }
+
+    // 👇 button create (sirf abhi issue hui book ke liye)
+    createQRButton(student);
+
+    // ================== 🔥 QR FEATURE END ==================
+
+
     // POPUP SHOW
     document.getElementById("issuePopup").style.display = "flex";
 
@@ -103,3 +146,9 @@ document.querySelector(".issu").addEventListener("click", function(e){
     document.querySelector("form").reset();
 
 });
+
+
+// 👇 QR CLOSE (global function hona zaroori hai)
+function closeQR(){
+    document.getElementById("qrOverlay").style.display = "none";
+}

@@ -10,7 +10,6 @@ if(!localStorage.getItem("books")){
 }
 
 
-// 🔥 UI update function
 function updateBookUI(){
 
     let books = JSON.parse(localStorage.getItem("books"));
@@ -53,7 +52,7 @@ function updateBookUI(){
 
     });
 }
-// 🔥 TOP BORROWED BOOK FUNCTION
+
 function showTopBorrowedBook(){
 
     let books = JSON.parse(localStorage.getItem("books"));
@@ -73,7 +72,7 @@ function showTopBorrowedBook(){
 
     });
 
-    // 👇 UI update
+
     document.getElementById("topBookName").innerText = topBook || "No Data";
     document.getElementById("topBookCount").innerText = maxBorrowed + " Borrowed";
 }
@@ -89,7 +88,7 @@ function showStudentRanking(){
 
     let studentCount = {};
 
-    // 👇 name + roll ko unique key bana diya
+
     data.forEach(item => {
 
         let key = item.name + " (" + item.roll + ")";
@@ -145,7 +144,51 @@ function showTotalFine(){
     document.getElementById("totalFine").innerText = "₹ " + totalFine;
 }
 
+function generateGraph(){
+
+    let books = JSON.parse(localStorage.getItem("books")) || [];
+
+    let graphDiv = document.getElementById("graph");
+    if(!graphDiv) return;
+
+    graphDiv.innerHTML = "";
+
+    // sort by most issued
+    books.sort((a, b) => {
+        let issuedA = a.total - a.available;
+        let issuedB = b.total - b.available;
+        return issuedB - issuedA;
+    });
+
+    books.forEach(book => {
+
+        let issued = book.total - book.available;
+
+        if(book.total === 0) return;
+
+        let percent = ((issued / book.total) * 100).toFixed(1);
+
+        let row = document.createElement("div");
+        row.className = "graph-row";
+
+        row.innerHTML = `
+            <div class="book-name">
+                ${book.category} (${issued}/${book.total})
+            </div>
+
+            <div class="bar">
+                <div class="fill" style="width:${percent}%"></div>
+            </div>
+
+            <div class="percent">${percent}%</div>
+        `;
+
+        graphDiv.appendChild(row);
+    });
+}
+
 updateBookUI();
 showTopBorrowedBook();
 showStudentRanking();
 showTotalFine();
+generateGraph(); 

@@ -41,7 +41,7 @@
             <button class="issu">Issued Book</button>
         </form>
     </div>
-    <!-- Success Popup -->
+    
 <div class="issue-popup" id="issuePopup">
   <div class="issue-card">
 
@@ -53,7 +53,10 @@
     <p>Book has been issued to the student.</p>
     <p id="issueUniqueId" style="font-weight: bold; color: #4CAF50;"></p>
 
-    <button id="closeIssue">OK</button>
+    <button id="closeIssue">OK</button>  
+    <div id="qrBtnContainer"></div>
+
+   <button id="closeIssueQRBtn" onclick="closeIssueQR()">Close</button>
 
   </div>
 </div>
@@ -68,6 +71,35 @@
 <img src="../img/Smart Library logo design.png" alt="" class="hlo">
  
 </div>
+
+
+  <!-- <h2 id="issueQRTitle">✅ Book Issued Successfully</h2> -->
+
+  <!-- 👇 QR button yaha aayega -->
+
+
+
+
+
+<!-- QR OVERLAY -->
+<div id="qrOverlay">
+
+  <div id="qrCard">
+    
+    <h2 id="qrTitle">📱 Scan QR</h2>
+
+    <canvas id="qrCanvas"></canvas>
+
+    <button id="closeQRBtn" onclick="closeQR()">Close</button>
+
+  </div>
+
+</div>
+
+
+<!-- QR LIBRARY -->
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
     <script src="issuebook.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
